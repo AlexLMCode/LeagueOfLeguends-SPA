@@ -2,7 +2,7 @@ import views from "../views/products.html";
 import getData from "../utils/API";
 
 export default async () => {
-    const champsImages = 'http://ddragon.leagueoflegends.com/cdn/img/champion/loading/';
+    const champsImages = 'https://ddragon.leagueoflegends.com/cdn/img/champion/loading/';
     const champMoore = 'https://euw.leagueoflegends.com/es-es/champions/'
     const element = document.createElement('div');
     element.innerHTML = views;
