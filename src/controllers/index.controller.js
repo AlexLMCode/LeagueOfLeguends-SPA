@@ -1,8 +1,13 @@
-import views from "../views/home.html";
+import Home from "./home.controller";
+import Products from "./products.controller";
+import Error from "./error.controller";
+import About from "./about.controller";
 
-export default () => {
-    const element = document.createElement('div');
-    element.innerHTML = views;
-
-    return element;
+const pages = {
+    home: Home,
+    products: Products,
+    about: About,
+    error: Error
 }
+
+export default pages;
