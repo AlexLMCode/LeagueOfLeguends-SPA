@@ -14,10 +14,10 @@ export default async () => {
 
     Object.values(champs).forEach(champ =>{
           list.innerHTML += `
-        <div class="col s6 m6">
+        <div class="col s12 m6 xl3">
               <div class="card">
                 <div class="card-image">
-                  <img src="${champsImages}${champ.name}_0.jpg" alt="Image of ${champ.name}">
+                  <img src="${champsImages}${champ.name}_0.jpg" alt="Image of ${champ.name}" class="responsive-img">
                   <span class="card-title">${champ.name}</span>
                 </div>
                 <div class="card-content">
